@@ -7,18 +7,18 @@
     <meta name="description" content="Parcijalac HTML" />
     <meta name="author" content="Dorijan Bićanić" />
     <title>Turistička agencija "Avanturist"</title>
+    <link rel="stylesheet" href="stylesheet.css" />
   </head>
   <body>
     <header>
-      <h1>Turistička agencija "Avanturist"</h1>
-      <nav>
+      <h1 class="glavniNaslov">Turistička agencija "Avanturist"</h1>
+      <nav id="navigacija">
         <ul>
           <li><a href="#oNama">O nama</a></li>
           <li><a href="#naseDjelatnosti">Naše djelatnosti</a></li>
           <li><a href="#kontakt">Kontakt</a></li>
         </ul>
       </nav>
-      <hr />
     </header>
     <main>
       <h1>Turistička agencija "Avanturist"</h1>
@@ -80,13 +80,12 @@
         </p>
         <img src="./multimedia/london.jpg" alt="Slika Londona" />
       </section>
-      <section>
+      <section class="kontakt">
         <h2 id="kontakt">Kontakt</h2>
         <form action="#" method="post">
           <label for="imePrezime">Upišite svoje ime i prezime</label> <br />
           <input type="text" name="imePrezime" id="imePrezime" required />
-          <br />
-          <br />
+
           <label for="mail">Upišite svoj email</label> <br />
           <input
             type="email"
@@ -95,8 +94,7 @@
             required
             placeholder="example@example.com"
           />
-          <br />
-          <br />
+
           <label for="poruka">Vaša poruka</label> <br />
           <textarea
             name="poruka"
@@ -105,16 +103,13 @@
             rows="10"
             placeholder="Ovdje počnite pisati"
           ></textarea>
-          <br />
-          <br />
+
           <label for="posalji">Kliknite da biste poslali poruku</label> <br />
           <input type="submit" value="Pošalji" name="posalji" id="posalji" />
-          <br />
-          <br />
         </form>
       </section>
     </main>
-    <hr />
+
     <footer>
       <span>Copyright &copy; 2022</span>
       <a href="mailto:dorijan1345@gmail.com"
