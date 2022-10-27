@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: 0.2s;
 }
 body {
   background-image: url(./multimedia/travel.jpg);
@@ -26,12 +27,12 @@ li [href] {
   padding: 20px 20px;
   color: rgb(255, 255, 255);
 }
-a:hover {
+li a:hover {
 
   background-color: rgba(3, 147, 250, 0.5);
 }
 
-ul li {
+nav ul li {
   display: inline-block;
 }
 
@@ -41,6 +42,7 @@ ul li {
 }
 main {
   margin-top: 20px;
+  text-align: center;
 }
 section {
   margin-top: 20px;
@@ -49,6 +51,55 @@ section {
 h2 {
   margin: 10px 0px;
 
+}
+article {
+  background-color: rgb(184, 225, 255);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  
+}
+
+
+.dropdown-ponude {
+  display: none;
+  list-style-type: none;
+  color: rgb(3, 75, 198);
+  padding: 10px 20px;
+  min-width: 250px;
+  z-index: 1;
+
+}
+
+.dropdown {
+  color: rgb(3, 75, 198);
+  display: inline-block;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  
+}
+
+.dropdown-ponude li {
+  color: rgb(3, 75, 198);
+  border: 1px solid white;
+  padding: 10px 20px;
+  
+}
+.dropdown-ponude li:hover {
+  background-color: rgba(3, 147, 250, 0.5);
+  color: white;
+}
+
+.dropdown:hover {
+  background-color: rgba(3, 147, 250, 0.5);
+  color: white;
+}
+.dropdown:hover .dropdown-ponude {
+  display: block;
+}
+
+p {
+  padding: 20px;
 }
 
 .kontakt {
@@ -74,6 +125,21 @@ label{
 }
 
 main img {
-  width: 400px;
+  width: 600px;
+  border-radius: 5px;
+  border: 3px solid rgba(104, 192, 255);
+  border-collapse: collapse;
 }
 
+footer {
+  text-align: center;
+  
+}
+
+footer span,a {
+  padding: 20px;
+}
+span {
+  position: relative;
+  top: -25px;
+}
